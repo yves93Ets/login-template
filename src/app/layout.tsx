@@ -22,9 +22,11 @@ export default function RootLayout({
       <body suppressHydrationWarning={true}>
         <AppRouterCacheProvider>
           <ThemeProvider theme={theme}>
-            <Header />
-            {children}
-            <Footer />
+            <div>
+              <Header />
+              {children}
+              <Footer />
+            </div>
           </ThemeProvider>
         </AppRouterCacheProvider>
       </body>

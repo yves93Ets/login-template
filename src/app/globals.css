@@ -4,7 +4,7 @@ main {
   align-items: center;
   justify-content: center;
   margin: 0 auto;
-  height: calc(100vh - 120px);
+  height: calc(100vh - 50px);
 }
 
 .header,
@@ -12,7 +12,7 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 50px;
+  height: 20px;
 }
 
 a {
