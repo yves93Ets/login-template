@@ -40,13 +40,7 @@ export function SignInWithEmail() {
       redirect: false,
     });
     formik.setSubmitting(false);
-    console.log(
-      1111,
-      "signInResult",
-      signInResult,
-      formik.values,
-      window.location.origin
-    );
+
     if (!signInResult?.ok)
       return notify(
         "Something went wrong, please try again" + signInResult?.error
