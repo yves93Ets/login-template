@@ -14,7 +14,7 @@ pnpm dev
 bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3001](http://localhost:3001) with your browser to see the result.
 
 You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
@@ -29,8 +29,33 @@ To learn more about Next.js, take a look at the following resources:
 
 You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
 
-## Deploy on Vercel
+# Docker
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+inside docer folder run
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+> docker-compose up -d
+> docker exec -it mongodb bash
+> mongosh --username root --password root --authenticationDatabase admin
+> show dbs
+>
+> in .env file add : DATABASE_URL=mongodb://rooot:root@localhost:27017/trimm?authSource=admin
+
+https://www.youtube.com/watch?v=CQk9AOPh5pw
+
+### TODO
+
+- add lanes with short server functions
+
+  - add lane :D
+  - create form
+  - reorder lanes
+  - handle error on create
+  - delete column
+
+- docerize db
+
+### Init Prisma models
+
+> npx prisma generate
+
+- Before all, run posinstall
